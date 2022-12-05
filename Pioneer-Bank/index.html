@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIONEER BANK</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="login-area">
+        <h1 class="text-center">Login</h1>
+        <div class="submit-area">
+            <form action="" id="login">
+                <input type="text" class="form-control" required placeholder="Enter your email">
+            <br>
+            <input type="password" class="form-control" required placeholder="Enter your password">
+            <br>
+            <button class="btn btn-success" type="submit">Login</button>
+            </form>
+
+            <div class="register" >
+                <p>Don't have an account? <button class="btn btn-success" id="redirect_register">Sing Up</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="registration-area">
+        <h1 class="text-center">Registration</h1>
+        <div class="submit-area">
+            <form action="" id="registration">
+                <!-- <form action="" id="registration" onsubmit="event.preventDefault(); return registrationSubmit()"> -->
+
+                <input type="text" class="form-control" required placeholder="Enter your email">
+            <br>
+            <input type="password" class="form-control" required placeholder="Enter your password">
+            <br>
+            <button class="btn btn-success" type="submit">Registration</button>
+
+            </form>
+            <div class="signin">
+                <p>Already have an account? <button class="btn btn-success" id="redirect_login">Sing In</button></p>
+            </div>
+        </div>
+    </div>
+    <div id="welcome-area">
+        <h1>Welcome</h1>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
