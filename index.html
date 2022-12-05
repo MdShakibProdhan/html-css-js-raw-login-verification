@@ -13,7 +13,7 @@
     <section id="reg-form-section">
         <div class="container">
             <div class="reg-layout">
-                <form class="reg-form" method="post" onsubmit="showWelcome(e)">
+                <form class="reg-form" id="myForm">
                     <div class="reg-form-body">
                         <h1>Register</h1>
                         <input type="text" placeholder="First Name" name="fname" class="fname" required>
@@ -36,7 +36,7 @@
                             <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
                         </div>
 
-                        <button type="submit" class="registerbtn">Register</button>
+                        <input type="submit" class="registerbtn" onclick="submitForm(e)" value="Submit"/>
                     </div>
                     <div class="signin">
                         <p>Already have an account? <a href="#" onclick="showLogin()">Sign in</a>.</p>
@@ -73,7 +73,7 @@
     <section id="welcome-section">
         <div class="container">
             <div class="layout">
-                <h1>Welcome</h1>
+                <h1 id="welcome">Welcome</h1>
             </div>
         </div><hr>
     </section> 
